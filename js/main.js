@@ -10,4 +10,9 @@ const app = new Vue({
         img: 'https://picsum.photos/200',
         center: 'text'
     },
+    methods: {
+        change: function () {
+            this.center = this.center === 'text' ? 'red' : 'text';
+        }
+    }
 });
